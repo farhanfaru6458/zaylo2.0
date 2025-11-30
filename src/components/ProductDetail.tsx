@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { ProductServices } from "../../services/product-services";
-import styles from "./product-detail.module.css";
+import { ProductServices } from "../services/product-services";
+import styles from "../pages/products/product-detail.module.css";
 import Link from "next/link";
-import ProductDetailsSkeleton from "./ProductDetailSkeleton";
+import ProductDetailsSkeleton from "../pages/products/ProductDetailSkeleton";
 import { Metadata } from "next";
 import Head from "next/head";
 

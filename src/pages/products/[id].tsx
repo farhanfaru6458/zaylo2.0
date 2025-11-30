@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ProductServices } from "../../services/product-services";
-import ProductDetailsClient from "./ProductDetail";
+import ProductDetailsClient from "../../components/ProductDetail";
 import ProductDetailsSkeleton from "./ProductDetailSkeleton";
 import { useRouter } from "next/router";
 
