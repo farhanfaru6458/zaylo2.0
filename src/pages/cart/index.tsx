@@ -118,11 +118,11 @@ if (loading) return <Loading />;
                   ×
                 </button>
 
-                  <div className="modal  fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
+                   <div className="modal  fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div className="modal-dialog">
-    <div className="modal-content bg-black">
+    <div className="modal-content " style={{background: "#eedec8"}}>
       <div className="modal-header">
-        <h1 className="modal-title text-white fs-5" id="exampleModalLabel">
+        <h1 className="modal-title text-black fs-5" id="exampleModalLabel">
           Your Order Has Been Placed
       
            </h1>
@@ -130,7 +130,7 @@ if (loading) return <Loading />;
       </div>
     
       <div className="modal-footer">
-        <button type="button"  onClick={() => removeItem(item.id)} className={`${styles.btn2}`} data-bs-dismiss="modal">Ok</button>
+        <button type="button"  onClick={() => removeItem(item.id)} className={`${styles.ok}`} data-bs-dismiss="modal">Ok</button>
        
       </div>
     </div>

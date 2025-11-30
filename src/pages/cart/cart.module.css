@@ -314,3 +314,96 @@
   height: 120px;
   border-radius: 14px;
 }
+
+
+
+
+.ok {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 45px;
+  border: none;
+  background-color: #0e0e0e; /* deep black */
+  color: white;
+  box-shadow:
+    0px 10px 15px rgba(0, 0, 0, 0.7) inset,
+    0px 5px 10px rgba(255, 255, 255, 0.06),
+    0px -10px 12px rgba(50, 50, 50, 0.4) inset,
+    0 0 12px rgba(0, 0, 0, 0.4); /* neon purple glow */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+
+/* Top light reflection */
+.ok::before {
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.15);
+  content: "";
+  filter: blur(1px);
+  top: 7px;
+  border-radius: 50%;
+  color: white;
+}
+
+.ok:active{
+  color: white;
+}
+
+/* Bottom reflection when clicked */
+.ok:active::after {
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.07);
+  content: "";
+  filter: blur(1px);
+  bottom: 7px;
+  border-radius: 50%;
+  color: white;
+}
+
+/* Hover animation */
+.ok:hover {
+  animation: jello-horizontal 0.9s both;
+  color: white;
+}
+
+/* Jello animation remains identical */
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
