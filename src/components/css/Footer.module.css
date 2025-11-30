@@ -1,0 +1,88 @@
+.footer {
+  background: #d3cec5;
+  padding: 50px 40px;
+  border-radius: 25px 25px 0 0;
+  margin-top: 60px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.colBrand {
+  max-width: 280px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.desc {
+  font-size: 0.9rem;
+  margin: 15px 0;
+  color: #555;
+  line-height: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.socials svg {
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.socials svg:hover {
+  transform: scale(1.2);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+}
+
+.col h4 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.col a {
+  text-decoration: none;
+  color: #444;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.col a:hover {
+  color: black;
+  transform: translateX(3px);
+}
+
+.bottomRow {
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .bottomRow {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}

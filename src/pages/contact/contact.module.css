@@ -1,0 +1,187 @@
+.container {
+  width: 100%;
+  padding-bottom: 50px;
+  background: #fcf6ef;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #baa4fc 0%, #f1fff9 100%);
+  color: #000;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* CONTACT LAYOUT */
+.contactWrapper {
+  margin: 50px auto;
+  max-width: 1200px;
+  display: flex;
+  gap: 30px;
+}
+
+/* FORM */
+.contactForm {
+  background: white;
+  flex: 1;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.contactForm h2 {
+  font-size: 24px;
+}
+
+.contactForm input,
+.contactForm select,
+.contactForm textarea {
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  font-size: 15px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.contactForm button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  background: #7a7cd9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* INFO CARDS */
+.infoCards {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.highlightCard {
+  background: linear-gradient(135deg, #baa4fc 0%, #f1fff9 100%);
+}
+
+/* MAP */
+.mapBanner {
+  margin: 50px auto;
+  border-radius: 25px;
+  max-width: 1200px;
+  position: relative;
+}
+
+.mapBanner img {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+.mapOverlay {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #5c5ecf;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+/* FAQ */
+.faq {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.faqCard {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* ========================================================= */
+/*                     RESPONSIVE FIXES                      */
+/* ========================================================= */
+
+/* Tablets and below */
+@media (max-width: 992px) {
+  .contactWrapper {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .mapOverlay {
+    bottom: 10px;
+    padding: 10px;
+  }
+
+  .mapBanner img {
+    height: auto;
+  }
+}

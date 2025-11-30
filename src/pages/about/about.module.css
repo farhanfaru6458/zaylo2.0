@@ -1,0 +1,214 @@
+
+:root{
+  --accent: #6e45ff;
+  --muted: #7a7a80;
+  --bg: #fcf6ef;
+  --card-bg: #fff;
+}
+
+/* page wrapper */
+.page {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #222;
+  background: var(--bg);
+  padding-bottom: 80px;
+}
+
+/* HERO */
+.hero {
+  padding: 64px 0;
+  background: linear-gradient(135deg, #baa4fc  0%, #f1fff9 100%);
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  margin-bottom: 40px;
+}
+
+.heroInner {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 48px 20px;
+}
+
+.headline {
+  font-size: 36px;
+  line-height: 1.05;
+  margin: 0 0 16px;
+  font-weight: 800;
+  color: #17202b;
+}
+
+.lead {
+  max-width: 720px;
+  margin: 0 auto 24px;
+  color: #5f6670;
+  font-size: 16px;
+}
+
+.cta {
+  background: linear-gradient(90deg, var(--accent), #9b6cff);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(110,69,255,0.15);
+}
+
+/* Sections */
+.section {
+  padding: 48px 20px;
+}
+
+.pale {
+  background: #f3eefe;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+/* kicker + title */
+.kicker {
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 28px;
+  margin: 0 0 28px;
+  font-weight: 800;
+}
+
+/* Values grid */
+.valuesGrid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 22px;
+  margin-top: 18px;
+}
+
+.valueCard{
+  background: var(--card-bg);
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(18, 20, 30, 0.06);
+  text-align: center;
+  min-height: 170px;
+}
+
+.valueCard h3{
+  margin-top: 12px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.valueCard p{
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* simple icon circle */
+.icon{
+  display:inline-grid;
+  place-items:center;
+  width:48px;
+  height:48px;
+  border-radius:999px;
+  background: rgba(110,69,255,0.08);
+  color: var(--accent);
+  font-size: 20px;
+}
+
+/* Journey rows */
+.row{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items:center;
+  margin-top: 28px;
+}
+
+.rowReverse{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items:center;
+  margin-top: 40px;
+}
+
+/* image card */
+.cardImage{
+  background: white;
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 10px 30px rgba(18,20,30,0.06);
+  overflow: hidden;
+}
+
+.img{
+  border-radius: 14px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* text column */
+.colText h3{
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.text{
+  color: var(--muted);
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+/* responsiveness */
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* stack on mobile */
+@media (max-width: 900px){
+  .valuesGrid{
+    grid-template-columns: 1fr;
+  }
+  .row, .rowReverse{
+    grid-template-columns: 1fr;
+  }
+  .heroInner {
+    padding: 36px 12px;
+  }
+  .headline{
+    font-size: 28px;
+  }
+  .sectionTitle{
+    font-size: 22px;
+  }
+}
+
+/* smaller phones */
+@media (max-width: 480px){
+  .hero {
+    padding: 36px 0;
+  }
+  .headline{
+    font-size: 20px;
+  }
+  .lead{
+    font-size: 14px;
+  }
+  .valueCard{
+    padding: 18px;
+  }
+}

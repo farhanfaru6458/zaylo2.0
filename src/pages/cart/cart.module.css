@@ -1,0 +1,316 @@
+/* =============================== */
+/* PAGE BACKGROUND */
+/* =============================== */
+.cartPage {
+  background: #f5f6fa;
+  min-height: 100vh;
+}
+
+/* =============================== */
+/* BREADCRUMB */
+/* =============================== */
+.breadcrumbText {
+  color: #9a9a9a;
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.breadcrumbText span {
+  color: #000;
+  font-weight: 600;
+}
+
+/* =============================== */
+/* CART ITEM */
+/* =============================== */
+.cartItem {
+  background: #fff;
+  border-radius: 20px;
+  transition: 0.25s;
+  align-items: center;
+}
+
+.cartItem:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* REMOVE BUTTON */
+.removeBtn {
+  border: none;
+  background: none;
+  font-size: 22px;
+  color: #b8b8b8;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.removeBtn:hover {
+  color: #ff4f4f;
+}
+
+/* =============================== */
+/* QUANTITY BUTTONS */
+/* =============================== */
+.qtyBtn {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  border: none;
+  background: #efeff4;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.qtyBtn:hover {
+  background: #dedde7;
+}
+
+/* =============================== */
+/* ORDER SUMMARY */
+/* =============================== */
+.orderBox {
+  background: #ffffff;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.orderBox .promoBox input {
+  border: 1px solid #dcdcdc;
+  border-radius: 12px 0 0 12px !important;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.orderBox .promoBox button {
+  background: #121212 !important;
+  padding: 10px 18px;
+  border-radius: 0 12px 12px 0 !important;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* CHECKOUT BUTTON */
+.checkoutBtn {
+  background: linear-gradient(90deg, #6a5dfc, #7b80ff);
+  border: none;
+  padding: 12px;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.checkoutBtn:hover {
+  opacity: 0.92;
+}
+
+/* CONTINUE SHOPPING LINK */
+.continueLink {
+  font-size: 14px;
+  text-decoration: none;
+  color: #6a5dfc;
+  font-weight: 600;
+
+
+}
+
+.continueLink:hover {
+  text-decoration: underline;
+}
+
+/* =============================== */
+/* YOU MIGHT ALSO LIKE */
+/* =============================== */
+.suggestCard {
+  background: #ffffff;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.25s;
+}
+
+.suggestCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.suggestImg {
+  width: 100%;
+  height: 150px;
+  background: #e4e4e4;
+  border-radius: 15px;
+}
+
+.addBtn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #eef0ff;
+  color: #4a43ff;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.addBtn:hover {
+  background: #dcdfff;
+}
+
+
+/* STACK CART ITEMS ON MOBILE */
+@media (max-width: 768px) {
+  .cartItem {
+    flex-direction: row !important;
+    padding: 15px !important;
+    text-align: left;
+  }
+
+  .qtyBtn {
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+  }
+
+  .orderBox {
+    margin-top: 25px;
+  }
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 480px) {
+  .cartItem {
+    padding: 12px !important;
+  }
+
+  .cartItem h5 {
+    font-size: 14px;
+  }
+
+  .cartItem span {
+    font-size: 13px;
+  }
+
+  .checkoutBtn {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+
+.skeleton {
+  background: linear-gradient(90deg, #ececec 0%, #f7f7f7 50%, #ececec 100%);
+  background-size: 200% 100%;
+  animation: shine 1.3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+.skelTitle,
+.skelSub,
+.skelLine,
+.skelLineShort,
+.skelLineSmall,
+.skelImg,
+.skelPrice,
+.skelSummary,
+.skelCard,
+.skelBtn,
+.skelCardMini {
+  background: linear-gradient(90deg, #e3e3e3 0%, #f2f2f2 50%, #e3e3e3 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Title skeleton */
+.skelTitle {
+  height: 35px;
+  width: 250px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.skelSub {
+  height: 18px;
+  width: 200px;
+  margin: 8px auto;
+}
+
+/* Product card skeleton */
+.skelCard {
+  height: 140px;
+}
+
+.skelImg {
+  width: 110px;
+  height: 110px;
+  border-radius: 12px;
+}
+
+.skelLine {
+  height: 18px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.skelLineShort {
+  height: 18px;
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.skelLineSmall {
+  height: 14px;
+  width: 40%;
+  margin-bottom: 8px;
+}
+
+.skelPrice {
+  width: 60px;
+  height: 20px;
+  margin-left: auto;
+  border-radius: 5px;
+}
+
+/* Summary Box */
+.skelSummary {
+  height: 200px;
+}
+
+.skelBtn {
+  width: 100%;
+  height: 40px;
+  margin-top: 12px;
+  border-radius: 12px;
+}
+
+/* Mini cards under "You might like" */
+.skelCardMini {
+  width: 150px;
+  height: 120px;
+  border-radius: 14px;
+}

@@ -1,0 +1,65 @@
+/* Wrapper */
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 40px 0;
+}
+
+/* Round Glass Buttons */
+.pageNumber {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px);
+  color: #4a3aff;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0px 4px 10px rgba(120, 70, 255, 0.15);
+}
+
+.pageNumber:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 18px rgba(120, 70, 255, 0.3);
+}
+
+/* Active Glowing Page */
+.activePage {
+  background: linear-gradient(135deg, #784bff, #4b8bff);
+  color: white !important;
+  box-shadow: 0px 0px 12px rgba(120, 70, 255, 0.6);
+  transform: scale(1.15);
+}
+
+/* Prev / Next buttons */
+.pageBtn {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 14px;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(120, 70, 255, 0.15);
+  transition: 0.25s ease;
+  color: #6b30ff;
+}
+
+.pageBtn:hover:not(:disabled) {
+  background: #6b30ff;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 18px rgba(120, 70, 255, 0.4);
+}
+
+.pageBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}

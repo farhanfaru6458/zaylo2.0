@@ -1,0 +1,41 @@
+.sidebar {
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px #eee;
+}
+
+.sidebarTitle {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Category button */
+.categoryBtn {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background: #f3f4ff;
+  border: none;
+  border-radius: 10px;
+  text-align: left;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.categoryBtn:hover {
+  background: #e4e0ff;
+}
+
+.activeCategory {
+  background: #6c4bff;
+  color: white;
+}
+
+/* Sticky sidebar (optional) */
+.sidebar {
+  position: sticky;
+  top: 100px;
+}

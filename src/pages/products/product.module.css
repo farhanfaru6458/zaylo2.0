@@ -1,0 +1,579 @@
+.wrapper {
+  padding: 20px 40px;
+}
+
+.banner {
+  background: linear-gradient(90deg, #e7d8ff, #d8e7ff);
+  padding: 40px;
+  border-radius: 25px;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 38px;
+  color: #5a2dbf;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: #555;
+  max-width: 600px;
+}
+
+.layout {
+  display: flex;
+  gap: 25px;
+}
+
+.rightSection {
+  flex: 1;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sortDropdown {
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+/* 🌟 Product Card Container */
+.card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px !important;
+  padding: 15px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  min-height: 380px;
+  border: 1px solid #f1f1f1;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* 🌟 Top Controls (Badge + Like Icon) */
+.cardTop {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  left: 12px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+/* 🌟 New Badge */
+.badge {
+  background: #1d1b30;
+  color: white;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* 🌟 Like (Heart) Icon */
+.likeIcon {
+  font-size: 20px;
+  color: #7d7d7d;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.likeIcon:hover {
+  color: #ff4d6d;
+}
+
+/* 🌟 Product Image */
+.image {
+  width: 100% !important;
+  height: 220px !important;
+  object-fit: contain;
+  border-radius: 18px;
+  margin-top: 35px;
+}
+
+/* 🌟 Product Info */
+.productInfo {
+  padding: 12px 5px;
+  margin-top: 10px;
+}
+
+/* Category Tag */
+.category {
+  color: #8f8f8f;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+/* Product Title */
+.productTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+/* Bottom row (Price + Add Button) */
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Price */
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6b30ff;
+}
+
+/* Add to Cart Button */
+.cartBtn {
+  width: 40px;
+  height: 40px;
+  background: #121212;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .25s ease;
+}
+
+.cartBtn:hover {
+  background: #6b30ff;
+}
+.inputContainer {
+  display: flex;
+  max-width: 500px;
+  margin: auto;
+  background: #222;
+  padding: 10px;
+  border-radius: 50px;
+  gap: 10px;
+}
+
+/* Email input */
+.input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding: 10px 15px;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+/* Subscribe button */
+.btn2 {
+  background: #c9ff63;
+  color: black;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn2:hover {
+  background: #b5ff3c;
+  transform: scale(1.05);
+}
+
+.positionFixed{
+  position: fixed;
+  top: 0px;
+  z-index: 99999;
+}
+
+
+.heroWrapper {
+  background: linear-gradient(90deg, #f1b7fd 0%, #fcd9ff 60%, #ffffff 100%);
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  max-width: 1300px;
+  margin: 20px auto;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.25);
+}
+.subtitle {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+
+.pageWrapper {
+  padding: 20px;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sortDropdown {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* SIDEBAR */
+.sidebar {
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px #eee;
+}
+
+.sidebarTitle {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.categoryBtn {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  background: #f3f4ff;
+  border: none;
+  border-radius: 10px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.activeCategory {
+  background: #6c4bff;
+  color: white;
+}
+
+/* Range input */
+.range {
+  width: 100%;
+}
+
+
+.sidebar {
+  position: sticky;
+  top: 120px; /* adjust depending on navbar height */
+  height: fit-content;
+}
+
+
+/* 🔥 Ultra Unique Pagination Style */
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 40px 0;
+}
+
+/* ◉ Round Glass Buttons */
+.pageNumber {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px);
+  color: #4a3aff;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0px 4px 10px rgba(120, 70, 255, 0.15);
+}
+
+/* ◉ Active Glowing Number */
+.activePage {
+  background: linear-gradient(135deg, #784bff, #4b8bff);
+  color: white !important;
+  box-shadow: 0px 0px 12px rgba(120, 70, 255, 0.6);
+  transform: scale(1.15);
+}
+
+/* ◉ Hover Animation */
+.pageNumber:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 18px rgba(120, 70, 255, 0.3);
+}
+
+/* ◉ Prev/Next Buttons */
+.pageBtn {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 14px;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(120, 70, 255, 0.15);
+  transition: 0.25s ease;
+  color: #6b30ff;
+}
+
+.pageBtn:hover:not(:disabled) {
+  background: #6b30ff;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 18px rgba(120, 70, 255, 0.4);
+}
+
+.pageBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+
+/* ===========================
+   🔥 Skeleton Loader Styles
+=========================== */
+
+.skeletonCard {
+  background: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  height: 380px;
+  position: relative;
+  overflow: hidden;
+  animation: pulse 1.5s infinite ease-in-out;
+  border: 1px solid #f1f1f1;
+}
+
+.skeletonBadge {
+  width: 50px;
+  height: 20px;
+  background: #e6e6e6;
+  border-radius: 6px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.skeletonImg {
+  width: 100%;
+  height: 210px;
+  background: #e6e6e6;
+  border-radius: 18px;
+  margin-top: 45px;
+}
+
+.skeletonInfo {
+  margin-top: 15px;
+}
+
+.skeletonTextSmall {
+  width: 80px;
+  height: 12px;
+  background: #e6e6e6;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.skeletonText {
+  width: 60%;
+  height: 15px;
+  background: #e6e6e6;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.skeletonPrice {
+  width: 40%;
+  height: 18px;
+  background: #e6e6e6;
+  border-radius: 6px;
+}
+
+/* ✨ Shimmer Animation */
+@keyframes pulse {
+  0% {
+    background-color: #f0f0f0;
+  }
+  50% {
+    background-color: #e4e4e4;
+  }
+  100% {
+    background-color: #f0f0f0;
+  }
+}
+
+
+/* Makes the whole card clickable without blue underline */
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Optional hover effect */
+.cardLink:hover .card {
+  transform: translateY(-6px);
+  transition: 0.3s ease;
+}
+
+/* Base card style improvement (optional) */
+.card {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* From Uiverse.io by FColombati */ 
+.button {
+  all: unset;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  position: relative;
+  border-radius: 100em;
+  background-color: rgba(0, 0, 0, 0.75);
+  box-shadow:
+    -0.15em -0.15em 0.15em -0.075em rgba(5, 5, 5, 0.25),
+    0.0375em 0.0375em 0.0675em 0 rgba(5, 5, 5, 0.1);
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: calc(100% + 0.3em);
+  height: calc(100% + 0.3em);
+  top: -0.15em;
+  left: -0.15em;
+  border-radius: inherit;
+  background: linear-gradient(
+    -135deg,
+    rgba(5, 5, 5, 0.5),
+    transparent 20%,
+    transparent 100%
+  );
+  filter: blur(0.0125em);
+  opacity: 0.25;
+  mix-blend-mode: multiply;
+}
+
+.button .buttonOuter {
+  position: relative;
+  height: 31px;
+  z-index: 1;
+  border-radius: inherit;
+  transition: box-shadow 300ms ease;
+  will-change: box-shadow;
+  box-shadow:
+    0 0.05em 0.05em -0.01em rgba(5, 5, 5, 1),
+    0 0.01em 0.01em -0.01em rgba(5, 5, 5, 0.5),
+    0.15em 0.3em 0.1em -0.01em rgba(5, 5, 5, 0.25);
+}
+
+.button:hover .buttonOuter {
+  box-shadow:
+    0 0 0 0 rgba(5, 5, 5, 1),
+    0 0 0 0 rgba(5, 5, 5, 0.5),
+    0 0 0 0 rgba(5, 5, 5, 0.25);
+}
+
+.buttonInner {
+  --inset: 0.035em;
+  position: relative;
+  z-index: 1;
+  height: 20px;
+  border-radius: inherit;
+  padding: 1em 1.5em;
+  background-image: linear-gradient(
+    135deg,
+    rgba(230, 230, 230, 1),
+    rgba(180, 180, 180, 1)
+  );
+  transition:
+    box-shadow 300ms ease,
+    clip-path 250ms ease,
+    background-image 250ms ease,
+    transform 250ms ease;
+  will-change: box-shadow, clip-path, background-image, transform;
+  overflow: clip;
+  clip-path: inset(0 0 0 0 round 100em);
+  box-shadow:
+        /* 1 */
+    0 0 0 0 inset rgba(5, 5, 5, 0.1),
+    /* 2 */ -0.05em -0.05em 0.05em 0 inset rgba(5, 5, 5, 0.25),
+    /* 3 */ 0 0 0 0 inset rgba(5, 5, 5, 0.1),
+    /* 4 */ 0 0 0.05em 0.2em inset rgba(255, 255, 255, 0.25),
+    /* 5 */ 0.025em 0.05em 0.1em 0 inset rgba(255, 255, 255, 1),
+    /* 6 */ 0.12em 0.12em 0.12em inset rgba(255, 255, 255, 0.25),
+    /* 7 */ -0.075em -0.25em 0.25em 0.1em inset rgba(5, 5, 5, 0.25);
+}
+
+.button:hover .buttonInner {
+  clip-path: inset(
+    clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px)
+      clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px) round 100em
+  );
+  box-shadow:
+        /* 1 */
+    0.1em 0.15em 0.05em 0 inset rgba(5, 5, 5, 0.75),
+    /* 2 */ -0.025em -0.03em 0.05em 0.025em inset rgba(5, 5, 5, 0.5),
+    /* 3 */ 0.25em 0.25em 0.2em 0 inset rgba(5, 5, 5, 0.5),
+    /* 4 */ 0 0 0.05em 0.5em inset rgba(255, 255, 255, 0.15),
+    /* 5 */ 0 0 0 0 inset rgba(255, 255, 255, 1),
+    /* 6 */ 0.12em 0.12em 0.12em inset rgba(255, 255, 255, 0.25),
+    /* 7 */ -0.075em -0.12em 0.2em 0.1em inset rgba(5, 5, 5, 0.25);
+}
+
+.button .buttonInner span {
+  position: relative;
+  z-index: 4;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+      top: -11px;
+  color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(
+    135deg,
+    rgba(25, 25, 25, 1),
+    rgba(75, 75, 75, 1)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: transform 250ms ease;
+  display: block;
+  will-change: transform;
+  text-shadow: rgba(0, 0, 0, 0.1) 0 0 0.1em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button:hover .buttonInner span {
+  transform: scale(0.975);
+}
+
+.button:active .buttonInner {
+  transform: scale(0.975);
+}
